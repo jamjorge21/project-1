@@ -1,0 +1,492 @@
+html {
+  height: 100%;
+  margin: 0;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+
+}
+
+#gifHiking {
+  justify-content: center;
+  display: inline-block;
+}
+
+header {
+  font-size: 72px;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  color: white;
+  border-bottom: 10px solid black;
+  background-color: darkslategrey;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+.registerLog {
+  float: right;
+  direction: rtl;
+  margin-top: -60px;
+}
+
+.regisBtn, .loginBtn {
+  display: block;
+  margin-bottom: 7px;
+  margin-right: 10px;
+  font-size: 14px;
+  font-family: 'Cinzel', serif;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.7;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+}
+
+.regisBtn:hover, .loginBtn:hover {
+  opacity: 1;
+}
+
+div.searchCont {
+  padding-top: 30px;
+}
+
+
+p {
+  text-align: center;
+  text-decoration: solid;
+  color: white;
+  font-size: 24px;
+  font-family: 'Cinzel', serif;
+}
+
+
+
+a#welcomeBtn {
+  margin-top: 200px;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: auto;
+  height: 30px;
+  padding: 30px;
+  font-size: 36px;
+  font-family: 'Cinzel', serif;
+  border-radius: 25%;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+ 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0.9;
+}
+
+#welcomeBtn:hover{
+  background-color: forestgreen;
+}
+
+form {
+  background-color:  rgba(0, 0, 0, 0.534);
+}
+
+h4, h5 {
+  text-align: center;
+    font-weight: bold;
+    color:  rgba(0, 0, 0, 0.534);
+}
+
+.menuCont {
+  width: fit-content;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+div.menuBtns {
+  color: white;
+  text-shadow: 1px 1.5px 3px purple;
+  position: fixed;
+  bottom: 7%;
+  text-align: center;
+  margin-bottom: -11px;
+  font-size: 36px;
+  font-family: 'Cinzel', serif;
+  justify-content: space-evenly;
+  display: inline-flex;
+  width: 100%;
+  background-color:  rgba(0, 0, 0, 0.534);
+
+}
+
+.menuBtns p {
+padding: 5px;
+}
+
+.pbtn {
+  font-size: 22px;
+}
+
+#stickyfooter {
+ position: fixed;
+ padding: 10px 10px 0px 10px;
+ bottom: 0;
+ width: 100%;
+ /* height of footer */
+ height: 40px;
+ background-color: gray;
+ text-align: center;
+ font-weight: 900;
+ border-top: 5px solid darkslategray
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    background-image: none;
+  }
+  
+  
+
+  body {
+   background-color: black;
+    }
+  
+    .wrapper {
+      
+      width: 100%;
+      padding: 20px;
+    }
+  
+    #main-content,
+    #sidebar {
+      width: 100%;
+    }
+  
+    #sidebar {
+      margin-top: 40px;
+    }
+    .pbtn {
+      font-size: 13px;
+    }
+    summary {
+      font-size: 16px;
+    }
+
+    div.menuBtns{
+      width: 375px;
+      margin-bottom: -18px;
+    }
+    button {
+      font-size: 24px;
+    }
+    div#fave.column1{
+      width: 330px;
+      height: 380px;
+      margin-left: none;
+    }
+    .column1{
+      
+      border-radius: 1%;
+      margin: none;
+      padding: none;
+    }
+    figure {
+      width: 330px;
+      height: 380px;
+      margin-left: -5px;
+
+    }
+    img {
+      width: 280px;
+      
+    }
+    div#route.column2{
+      width: 330px;
+      height: 380px
+    }
+    div#map.column3{
+      width: 330px;
+      height: 380px
+    }
+}
+/* djaldkj */
+ /* * {box-sizing: border-box}
+ body {font-family: Verdana, sans-serif; margin:0}
+ .mySlides {display: none}
+ img {vertical-align: middle;} */
+ 
+ /* Slideshow container */
+ .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+#slideImg{
+  margin-top: 50px;
+  position: relative;
+  flex: content;
+  z-index: -1;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  margin-top: 50px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.activedot, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+#welcomeBtn{
+  margin-top: 200px;
+}
+
+
+  
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+  #welcomeBtn{
+    margin-top: 200px;
+  }
+
+ 
+@media screen and (max-width: 400px) {
+  html {
+    background-image: none;
+  }
+  #welcomeBtn{
+    margin-top: 200px;
+  }
+
+  
+    body {
+   background-color: black;
+    }
+  
+    .wrapper {
+      
+      width: 100%;
+      padding: 20px;
+    }
+  
+    #main-content,
+    #sidebar {
+      width: 100%;
+    }
+  
+    #sidebar {
+      margin-top: 40px;
+    }
+    .pbtn {
+      font-size: 13px;
+    }
+    summary {
+      font-size: 16px;
+    }
+
+    div.menuBtns{
+      width: 375px;
+      margin-bottom: -18px;
+    }
+    button {
+      font-size: 24px;
+    }
+    div#fave.column1{
+      width: 330px;
+      height: 380px;
+      margin-left: none;
+    }
+    .column1{
+      
+      border-radius: 1%;
+      margin: none;
+      padding: none;
+    }
+    figure {
+      width: 330px;
+      height: 380px;
+      margin-left: -5px;
+
+    }
+    img {
+      width: 280px;
+      
+    }
+    div#route.column2{
+      width: 330px;
+      height: 380px
+    }
+    div#map.column3{
+      width: 330px;
+      height: 380px
+    }
+}
+  
+@media screen and (max-width: 992px) {
+    html {
+      background-image: none;
+    }
+  
+    #welcomeBtn{
+      margin-top: 200px;
+    }
+
+  
+
+    body {
+        background-color: black;
+      
+    }
+  
+    .wrapper {
+      
+      width: 100%;
+      padding: 20px;
+    }
+  
+    #main-content,
+    #sidebar {
+      width: 100%;
+    }
+  
+    #sidebar {
+      margin-top: 40px;
+    }
+    .pbtn {
+      font-size: 13px;
+    }
+    summary {
+      font-size: 16px;
+    }
+
+    div.menuBtns{
+      width: 375px;
+      margin-bottom: -18px;
+    }
+    button {
+      font-size: 18px;
+    }
+    div#fave.column1{
+      width: 330px;
+      height: 380px;
+      margin-left: none;
+    }
+    .column1{
+      
+      border-radius: 1%;
+      margin: none;
+      padding: none;
+    }
+    figure {
+      width: 330px;
+      height: 380px;
+      margin-left: -5px;
+
+    }
+    img {
+      width: 280px;
+      
+    }
+    div#route.column2{
+      width: 330px;
+      height: 380px
+    }
+    div#map.column3{
+      width: 330px;
+      height: 380px
+    }
+}

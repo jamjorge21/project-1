@@ -1,0 +1,415 @@
+/* navigation page */
+html {
+  height: 100%;
+  margin: 0;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+
+}
+
+header {
+  font-size: 72px;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  color: white;
+  border-bottom: 10px solid black;
+  background-color: darkslategrey;
+  padding: 0px;
+  margin-bottom: 0px;
+
+}
+
+#right-panel {
+  font-family: "Roboto", "sans-serif";
+  line-height: 30px;
+  padding-left: 10px;
+  align-content: center;
+  width: 350px;
+  height: 100%;
+  padding-bottom: 200px;
+  color: aliceblue;
+}
+.adp-summary {
+background-color: aliceblue;
+}
+.adp-substep{
+  background-color: aliceblue;
+}
+.adp{
+  background-color: aliceblue;
+}
+#right-panel select,
+#right-panel input {
+  font-size: 15px;
+
+}
+
+#right-panel select {
+  width: 200px;
+}
+
+#right-panel i {
+  font-size: 12px;
+}
+
+p{
+ box-shadow: steelblue;
+}
+
+#map {
+  height: 50%;
+  width: 100%;
+  height: 550px;
+  align-content: center;
+  margin-top: -6px;
+}
+
+.panel {
+  height: 100%;
+  overflow: auto;
+}
+
+ 
+h4, h5 {
+  text-align: center;
+  font-weight: bold;
+  color:  rgba(0, 0, 0, 0.534);
+}
+  
+.menuCont {
+  width: fit-content;
+}
+  
+a {
+  color: white;
+  text-decoration: none;
+}
+  
+
+
+div.menuBtns {
+  color: white;
+  position: fixed;
+  bottom: 11%;
+  text-align: center;
+  margin-bottom: -50px;
+  font-size: 36px;
+  font-family: 'Cinzel', serif;
+  justify-content: space-evenly;
+  display: inline-flex;
+  width: 100%;
+  background-color:  rgba(0, 0, 0, 0.534);
+}
+  
+.menuBtns p {
+  padding: 3px;
+}
+
+.spacer {
+  height: 500px;
+}
+  
+.pbtn {
+  font-size: 22px;
+}
+
+/* columns */
+  
+/* * {
+  box-sizing: border-box;} */
+  
+  .info {
+
+    border: solid;
+    border-width: 1px;
+    border-color: white;
+    margin: 20px;
+  }
+  
+  .column1 {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px;
+  }
+  
+  
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  h2 {
+    padding-top: 40px;
+    padding-bottom: 15px;
+    margin-bottom: -10px;
+    font-size: 40px;
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    color: white;
+    padding: -30px;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  summary {
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 20px;
+    color: white;
+    padding: -30px;
+    outline: none;
+  }
+  
+/* dashed list */
+ul {
+  margin: 0px;
+  font-size: 18px;
+  color: white;
+  padding: -30px;
+}
+
+ul.dashed {
+  list-style-type: none;
+}
+
+ul.dashed > li {
+  text-indent: 5px;
+}
+
+ul.dashed > li:before {
+  content: "-";
+  text-indent: -5px;
+}
+
+  
+#stickyfooter {
+  position: fixed;
+  padding: 5px;
+  bottom: 0;
+  width: 100%;
+  /* height of footer */
+  height: 40px;
+  background-color: gray;
+  text-align: center;
+  font-weight: 900;
+  border-top: 5px solid darkslategray
+ }
+  
+  @media screen and (max-width: 768px) {
+    html {
+      background-image: none;
+      }  
+      
+    body {
+      background-color: black;
+      }
+      
+      .wrapper {
+          
+        width: 100%;
+        padding: 20px;
+      }
+      
+      #main-content,
+      #sidebar {
+        width: 100%;
+      }
+      
+      #sidebar {
+        margin-top: 40px;
+      }
+
+      .pbtn {
+        font-size: 13px;
+      }
+      summary {
+        font-size: 16px;
+      }
+
+      div.menuBtns{
+        width: 375px;
+        margin-bottom: -18px;
+      }
+      button {
+        font-size: 24px;
+      }
+      div#fave.column1{
+        width: 330px;
+        height: 380px;
+        margin-left: none;
+      }
+      .column1{
+        
+        border-radius: 1%;
+        margin: none;
+        padding: none;
+      }
+      figure {
+        width: 330px;
+        height: 380px;
+        margin-left: -5px;
+
+      }
+      img {
+        width: 280px;
+        
+      }
+      div#route.column2{
+        width: 330px;
+        height: 380px
+      }
+      div#map.column3{
+        width: 330px;
+        height: 380px
+      }
+  }
+      
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+      }
+    }
+    
+  @media screen and (max-width: 400px) {
+    html {
+      background-image: none;
+      }  
+      
+    body {
+      background-color: black;
+      }
+      
+      .wrapper {
+          
+        width: 100%;
+        padding: 20px;
+      }
+      
+      #main-content,
+      #sidebar {
+        width: 100%;
+      }
+      
+      #sidebar {
+        margin-top: 40px;
+      }
+
+      .pbtn {
+        font-size: 13px;
+      }
+      summary {
+        font-size: 16px;
+      }
+
+      div.menuBtns{
+        width: 375px;
+        margin-bottom: -18px;
+      }
+      button {
+        font-size: 24px;
+      }
+      div#fave.column1{
+        width: 330px;
+        height: 380px;
+        margin-left: none;
+      }
+      .column1{
+        
+        border-radius: 1%;
+        margin: none;
+        padding: none;
+      }
+      figure {
+        width: 330px;
+        height: 380px;
+        margin-left: -5px;
+
+      }
+      img {
+        width: 280px;
+        
+      }
+      div#route.column2{
+        width: 330px;
+        height: 380px
+      }
+      div#map.column3{ 
+        width: 330px;
+        height: 380px
+      }
+  }
+      
+    @media screen and (max-width: 992px) {
+      html {
+        background-image: none;
+      }  
+      
+      body {
+            background-color: black;
+          
+        }
+      
+        .wrapper {
+          
+          width: 100%;
+          padding: 20px;
+        }
+      
+        #main-content,
+        #sidebar {
+          width: 100%;
+        }
+      
+        #sidebar {
+          margin-top: 40px;
+        }
+        
+        .pbtn {
+          font-size: 13px;
+        }
+        summary {
+          font-size: 16px;
+        }
+    
+        div.menuBtns{
+          width: 375px;
+          margin-bottom: -50px;
+        }
+        button {
+          font-size: large;
+        }
+        #map{
+          margin-left: 4%;
+          height: 400px;
+          width: 340px;
+        }
+        #floating-panel {
+          margin-top: 15px;
+          color: white;
+      
+        }
+        .embed[data-ready="true"] {
+          height: 220px;
+          width: 240px;
+        }
+      #stickyfooter{
+        height: 30px;
+      }
+
+    }
+
+  

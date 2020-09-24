@@ -1,0 +1,487 @@
+html {
+  height: 100%;
+  margin: 0;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+.hide{
+  visibility: hidden;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.profileBody {
+  text-align: center;
+  justify-content: center;
+  margin-top: 8%;
+  margin-left: 34%;
+  display: flow-root;
+  background: linear-gradient(to right, darkslategrey, purple);
+  overflow-x: hidden;
+  width: 540px;
+  height: 450px;
+  position: relative;
+ box-shadow: 2px 5px 20px rgba(119, 119, 119, 0.5);
+}
+
+
+
+nav a {
+  list-style: none;
+  padding: 35px;
+  color: white;
+  display: block;
+  font-size: 1.1em;
+  float: left;
+  transition: all .3s ease-in-out;
+  margin-right: 20px;
+
+}
+
+nav a:hover {
+  color: gray;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+nav a:first-child {
+  margin-top: 7px;
+}
+
+nav a.active {
+ color: gray;
+}
+
+
+.rightSide {
+  width: 60%;
+  margin-left: 27%;
+}
+
+.tabShow {
+  transition: all .5s ease-in;
+  width: 80%;
+}
+
+h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.5em;
+  
+  color: white;
+  text-shadow: 1px 1.5px 4px black;
+}
+
+img {
+  width: 75%;
+  padding: 15px;
+}
+
+h3 {
+  font-family: 'Cinzel', serif;
+  color: white;
+  padding: 5px;
+  text-shadow: 1px 1.5px 3px black;
+}
+
+.infoBtn {
+  background-color: darkslategray;
+  color: white;
+  text-shadow: 1px 1px 3px purple;
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 8px;
+  font-family: 'Cinzel', serif;
+}
+
+.infoBtn:hover {
+  color: white;
+  cursor: pointer;
+  transform: scale(1.2);
+  background-color: forestgreen;
+}
+
+header {
+  font-size: 72px;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  color: white;
+  border-bottom: 10px solid black;
+  background-color: darkslategrey;
+  padding: 0px;
+  margin-bottom: 0px;
+
+}
+
+.registerLog {
+  float: right;
+  direction: rtl;
+  margin-top: -60px;
+}
+
+.regisBtn, .loginBtn {
+  display: block;
+  margin-bottom: 7px;
+  margin-right: 10px;
+  font-size: 14px;
+  font-family: 'Cinzel', serif;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.7;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+}
+
+.regisBtn:hover, .loginBtn:hover {
+  opacity: 1;
+}
+
+div.container {
+  padding-top: 30px;
+}
+
+div.profileCont {
+  color: white;
+  height: 280px;
+}
+
+div.statsBarCont {
+  color: white;
+  height: 40px;
+}
+
+div.reviewsBarCont {
+  color: white;
+  height: 40px;
+}
+
+div.storedPicCont {
+  color: white;
+  height: 40px;
+}
+
+div.followedUserCont{
+  color: white;
+  height: 40px;
+}
+
+div.settingBarCont {
+  color: white;
+  height: 40px;
+}
+
+
+form {
+  background-color:  rgba(0, 0, 0, 0.534);
+}
+
+h4, h5 {
+  text-align: center;
+    font-weight: bold;
+    color:  rgba(0, 0, 0, 0.534);
+}
+
+.menuCont {
+  width: fit-content;
+}
+
+iframe.giphy-embed {
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+div.menuBtns {
+  color: white;
+  position: fixed;
+  bottom: 8%;
+  text-align: center;
+  margin-bottom: -28px;
+  font-size: 36px;
+  font-family: 'Cinzel', serif;
+  justify-content: space-evenly;
+  display: inline-flex;
+  width: 100%;
+  background-color:  rgba(0, 0, 0, 0.534);
+
+}
+
+.menuBtns p {
+padding: 5px;
+}
+
+.pbtn {
+  font-size: 22px;
+}
+
+#stickyfooter {
+ position: fixed;
+ padding: 10px 10px 0px 10px;
+ bottom: 0;
+ width: 100%;
+ /* height of footer */
+ height: 34px;
+ background-color: gray;
+ text-align: center;
+ font-weight: 900;
+ border-top: 5px solid darkslategray
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    background-image: none;
+  }
+  
+  body {
+   background-color: black;
+    }
+  
+    .wrapper {
+      
+      width: 100%;
+      padding: 20px;
+    }
+  
+    #main-content,
+    #sidebar {
+      width: 100%;
+    }
+  
+    #sidebar {
+      margin-top: 40px;
+    }
+    .pbtn {
+      font-size: 13px;
+    }
+    summary {
+      font-size: 16px;
+    }
+
+    div.menuBtns{
+      width: 375px;
+      margin-bottom: -18px;
+    }
+    button {
+      font-size: 24px;
+    }
+    div#fave.column1{
+      width: 330px;
+      height: 380px;
+      margin-left: none;
+    }
+    .column1{
+      
+      border-radius: 1%;
+      margin: none;
+      padding: none;
+    }
+    figure {
+      width: 330px;
+      height: 380px;
+      margin-left: -5px;
+
+    }
+    img {
+      width: 280px;
+      
+    }
+    div#route.column2{
+      width: 330px;
+      height: 380px
+    }
+    div#map.column3{
+      width: 330px;
+      height: 380px
+    }
+}
+  
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
+
+@media screen and (max-width: 400px) {
+  html {
+    background-image: none;
+  }
+  
+    body {
+   background-color: black;
+    }
+  
+    .wrapper {
+      
+      width: 100%;
+      padding: 20px;
+    }
+  
+    #main-content,
+    #sidebar {
+      width: 100%;
+    }
+  
+    #sidebar {
+      margin-top: 40px;
+    }
+    .pbtn {
+      font-size: 13px;
+    }
+    summary {
+      font-size: 16px;
+    }
+    
+    .pbtn {
+      font-size: 13px;
+    }
+    summary {
+      font-size: 16px;
+    }
+
+    div.menuBtns{
+      width: 375px;
+      margin-bottom: -18px;
+    }
+    button {
+      font-size: 24px;
+    }
+    div#fave.column1{
+      width: 330px;
+      height: 380px;
+      margin-left: none;
+    }
+    .column1{
+      
+      border-radius: 1%;
+      margin: none;
+      padding: none;
+    }
+    figure {
+      width: 330px;
+      height: 380px;
+      margin-left: -5px;
+
+    }
+    img {
+      width: 280px;
+      
+    }
+    div#route.column2{
+      width: 330px;
+      height: 380px
+    }
+    div#map.column3{
+      width: 330px;
+      height: 380px
+    }
+}
+  
+@media screen and (max-width: 992px) {
+    html {
+      background-image: none;
+    }
+  
+  
+    body {
+        background-color: black;
+      width: fit-content;
+    }
+  
+    .wrapper {
+      
+      width: 100%;
+      padding: 20px;
+    }
+  
+    #main-content,
+    #sidebar {
+      width: 100%;
+    }
+  
+    #sidebar {
+      margin-top: 40px;
+    }
+    .pbtn {
+      font-size: 13px;
+    }
+    summary {
+      font-size: 16px;
+    }
+
+    .pbtn {
+      font-size: 13px;
+    }
+    summary {
+      font-size: 16px;
+    }
+
+    div.menuBtns{
+      width: 375px;
+      margin-bottom: -23px;
+    }
+    button {
+      font-size: 24px;
+    }
+    div#fave.column1{
+      width: 330px;
+      height: 380px;
+      margin-left: none;
+    }
+    .column1{
+      
+      border-radius: 1%;
+      margin: none;
+      padding: none;
+    }
+    figure {
+      width: 330px;
+      height: 380px;
+      margin-left: -5px;
+
+    }
+    img {
+      width: 200px;
+      height: 200px;
+      margin-right: 160px;
+    }
+    div#route.column2{
+      width: 330px;
+      height: 380px
+    }
+    div#map.column3{
+      width: 330px;
+      height: 380px
+    }
+    .profileBody {
+      margin-left: 6%;
+      width: 330px;
+      height: 500px;
+      display: flow-root;
+     }
+      
+     img {
+       margin-left: -34px;
+       margin-top: -75px;
+     }
+    
+    button#btn.infoBtn{
+      margin-top: 10%;
+    }
+}

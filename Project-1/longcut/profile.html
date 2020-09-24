@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+    
+        <meta charset="UTF-8" />
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+        <link rel="stylesheet" href="assets/css/reset.css" />
+    
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@800;900&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="assets/css/style.driver.css" />
+    
+        <title> The Long Cut App </title>
+    
+
+    
+    </head>
+
+    <header>
+        <h1 class="text-center"><a href="index.html">The Long Cut </a></h1></strong>
+        
+    </header>
+    
+    <body>
+    
+        <div class="profileBody">
+            <div class="profileContainer">
+             
+                <div class="rightSide">
+                    <div class="profile tabShow">
+                        <button id="advr-button">Choose Your Adventurer</button>
+                        <div id="images">
+                        </div>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                        <script type="text/javascript">
+                          // Event listener for our advr-button
+                          $("#advr-button").on("click", function() {
+                      
+                            // Storing our giphy API URL for a random adventure image
+                            var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=amF9RL7pDTXVI5ZBDXyOrjZnf04RVf1z&tag=adventure";
+                      
+                            // Perfoming an AJAX GET request to our queryURL
+                            $.ajax({
+                              url: queryURL,
+                              method: "GET"
+                            })
+                      
+                            // After the data from the AJAX request comes back
+                              .then(function(response) {
+                      
+                              // Saving the image_original_url property
+                                var imageUrl = response.data.image_original_url;
+                      
+                                // Creating and storing an image tag
+                                var advrImage = $("<img>");
+                      
+                                // Setting the advrImage src attribute to imageUrl
+                               advrImage.attr("src", imageUrl);
+                                advrImage.attr("alt", "adventure image");
+                      
+                                // Prepending the advrImage to the images div
+                                $("#images").prepend(advrImage);
+                                $("#advr-button").addClass("hide");
+                              });
+                              
+                          });
+                        </script>
+                      
+                        <h2>My Profile</h2>
+                        <h3 id="name"></h3>
+                        <input id="userName" type= "text" placeholder="Insert Name">
+                        
+                        <h3 id="routes">Routes Completed :</h3>
+                        <input id="routeNum" type="text" placeholder="example 5 routes">
+                        <h3 id="currentLocation">Location :</h3>
+                        <input id="location" type="text" placeholder="Where are you from?">
+                        <h3 id="currentEmail">Email Address :</h3>
+                        <input id="email" type="text" placeholder="example@example.com">
+                        <div id="msg"></div>
+                        <button class="infoBtn" id="btn">Save Profile</button>
+                    </div>
+                    
+                </div>
+            
+            </div>
+        </div>
+        
+
+    <div class="container">
+    
+    </div>
+
+
+  
+
+  
+    <div class = "menuCont">
+    
+    <div class="menuBtns">      
+        <div id="prospBtn"><a href="prospect.html" class="botButtons">
+            
+            <i class="fas fa-map-signs"></i>
+            
+            <br>
+            
+            <p class="pbtn"> Navigation </p>
+
+        </a></div>
+
+        <br>
+
+
+        <br>
+    
+        <div id="profileBtn"><a href="profile.html">
+            
+            <i class="fas fa-id-card"></i>
+            
+            <br>
+            
+            <p class="pbtn"> Profile </p>
+            
+        </a></div>
+    
+    </div>
+
+  </div>
+
+    <div id="stickyfooter">
+       
+        Routes Constellated by the Stars 🛣 🌟<br> The Long Cut © 
+    </div>
+ 
+    
+              
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+        <script src="assets/js/driver.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,397 @@
+html {
+  height: 100%;
+  margin: 0;
+  background-image: url(https://cdn.hipwallpaper.com/i/92/33/q2LRKO.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+  
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+
+}
+
+header {
+  font-size: 72px;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  color: white;
+  text-shadow: 1.5px 2.5px 5px purple;
+  border-bottom: 10px solid black;
+  background-color: darkslategrey;
+  padding: 0px;
+  margin-bottom: 0px;
+
+}
+.container {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: thin white solid;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 150px;
+  width: 600px;
+  padding: 15px;
+  height: 420px;
+  text-align: left;
+}
+
+.userNameCont {
+  padding: 5%;
+}
+
+.passwordCont {
+  padding: 5%;
+}
+
+button.loginBtn{
+  padding: 5%;
+}
+
+.registerLog {
+  float: right;
+  direction: rtl;
+  margin-top: -60px;
+}
+
+.regisBtn, .loginBtn {
+  display: block;
+  margin-bottom: 7px;
+  margin-right: 10px;
+  font-size: 14px;
+  font-family: 'Cinzel', serif;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.7;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+}
+
+.regisBtn:hover, .loginBtn:hover {
+  opacity: 1;
+}
+
+
+  p {
+    text-align: center;
+    text-decoration: solid;
+    color: white;
+    font-size: 24px;
+    font-family: 'Cinzel', serif;
+  }
+  
+  form {
+    background-color:  rgba(0, 0, 0, 0.534);
+  }
+  
+  h4, h5 {
+    text-align: center;
+      font-weight: bold;
+      color:  rgba(0, 0, 0, 0.534);
+  }
+  
+  .menuCont {
+    width: fit-content;
+  }
+  
+  a {
+    color: white;
+    text-shadow: 1px 1.5px 3px purple;
+    text-decoration: none;
+  }
+  
+  div.menuBtns {
+    color: white;
+    text-shadow: 1px 1.5px 3px purple;
+    position: fixed;
+    bottom: 7%;
+    text-align: center;
+    margin-bottom: -11px;
+    font-size: 36px;
+    font-family: 'Cinzel', serif;
+    justify-content: space-evenly;
+    display: inline-flex;
+    width: 100%;
+    background-color:  rgba(0, 0, 0, 0.534);
+  
+  }
+  
+  .menuBtns p {
+  padding: 5px;
+  }
+  
+  .pbtn {
+    font-size: 22px;
+  }
+  
+  #stickyfooter {
+   position: fixed;
+   padding: 10px 10px 0px 10px;
+   bottom: 0;
+   width: 100%;
+   /* height of footer */
+   height: 40px;
+   background-color: gray;
+   text-align: center;
+   font-weight: 900;
+   border-top: 5px solid purple
+  }
+  
+  @media screen and (max-width: 768px) {
+    html {
+      background-image: none;
+    }
+    
+    body {
+     background-color: black;
+      }
+    
+      .wrapper {
+        
+        width: 100%;
+        padding: 20px;
+      }
+    
+      #main-content,
+      #sidebar {
+        width: 100%;
+      }
+    
+      #sidebar {
+        margin-top: 40px;
+      }
+      .pbtn {
+        font-size: 13px;
+      }
+      summary {
+        font-size: 16px;
+      }
+  
+      div.menuBtns{
+        width: 375px;
+        margin-bottom: -18px;
+      }
+      button {
+        font-size: 24px;
+      }
+      div#fave.column1{
+        width: 330px;
+        height: 380px;
+        margin-left: none;
+      }
+      .column1{
+        
+        border-radius: 1%;
+        margin: none;
+        padding: none;
+      }
+      figure {
+        width: 330px;
+        height: 380px;
+        margin-left: -5px;
+  
+      }
+      img {
+        width: 280px;
+        
+      }
+      div#route.column2{
+        width: 330px;
+        height: 380px
+      }
+      div#map.column3{
+        width: 330px;
+        height: 380px
+      }
+  }
+    
+  @media only screen and (max-width: 768px) {
+      /* For mobile phones: */
+      [class*="col-"] {
+        width: 100%;
+      }
+    }
+  
+  @media screen and (max-width: 400px) {
+    html {
+      background-image: none;
+    }
+    
+      body {
+     background-color: black;
+      }
+    
+      .wrapper {
+        
+        width: 100%;
+        padding: 20px;
+      }
+    
+      #main-content,
+      #sidebar {
+        width: 100%;
+      }
+    
+      #sidebar {
+        margin-top: 40px;
+      }
+      .pbtn {
+        font-size: 13px;
+      }
+      summary {
+        font-size: 16px;
+      }
+  
+      div.menuBtns{
+        width: 375px;
+        margin-bottom: -18px;
+      }
+      button {
+        font-size: 24px;
+      }
+      div#fave.column1{
+        width: 330px;
+        height: 380px;
+        margin-left: none;
+      }
+      .column1{
+        
+        border-radius: 1%;
+        margin: none;
+        padding: none;
+      }
+      figure {
+        width: 330px;
+        height: 380px;
+        margin-left: -5px;
+  
+      }
+      img {
+        width: 280px;
+        
+      }
+      div#route.column2{
+        width: 330px;
+        height: 380px
+      }
+      div#map.column3{
+        width: 330px;
+        height: 380px
+      }
+  }
+    
+  @media screen and (max-width: 992px) {
+      html {
+        background-image: none;
+      }
+    
+    
+      body {
+          background-color: black;
+        
+      }
+      .h2 {
+        font-size: large;
+      }
+      .wrapper {
+        
+        width: 100%;
+        padding: 20px;
+      }
+    
+      #main-content,
+      #sidebar {
+        width: 100%;
+      }
+    
+      #sidebar {
+        margin-top: 40px;
+      }
+      .pbtn {
+        font-size: 13px;
+      }
+      summary {
+        font-size: 16px;
+      }
+  
+      div.menuBtns{
+        width: 375px;
+        margin-bottom: -13px;
+      }
+      button {
+        font-size: 24px;
+      }
+      .container {
+        width: 330px;
+        height: 360px;
+        font-size: medium;
+        margin-top: 10px;
+        
+      }
+
+      button.registerBtn {
+        width: 280px;
+      }
+      .registerBox{
+        width: 310px;
+        height: 780px;
+      }
+      label{
+        height: 40px;
+      }
+      
+
+    }
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+.registerBox {
+    line-height: 80px;
+}
+
+label {
+    font-size: 26px;
+    width: 250px;
+    display: inline-block;
+    float: left;
+    clear: left;
+    
+}
+
+input[type=text], input[type=password] {
+    width: 200px;
+    height: 28px;
+    padding: 10px;
+}
+
+.registerBtn {
+    width: 100%;
+    background-color: darkslategray;
+    opacity: 0.9;
+    padding: 10px 0;
+    font-size: 24px;
+}
+
+.registerBtn:hover {
+    opacity: 1;
+}
+
+h2 {
+    color: white;
+    font-size: 34px;
+    padding: 20px;
+}
+
+label {
+    color: white;
+}

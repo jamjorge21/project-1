@@ -1,0 +1,503 @@
+
+/* prospect page */
+
+html {
+  height: 100%;
+  margin: 0;
+  background-image: url("background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+
+}
+
+#gif1 {
+  margin-left: 20%;
+  padding: 20px;
+}
+
+#gif {
+  margin-left: 22%;
+  padding: 20px;
+}
+
+header {
+  font-size: 72px;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  color: white;
+  border-bottom: 10px solid black;
+  background-color: darkslategrey;
+  padding: 0px;
+  margin-bottom: 0px;
+
+}
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.registerLog {
+  float: right;
+  direction: rtl;
+  margin-top: -60px;
+}
+
+.regisBtn, .loginBtn {
+  display: block;
+  margin-bottom: 7px;
+  margin-right: 10px;
+  font-size: 14px;
+  font-family: 'Cinzel', serif;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.7;
+  border-radius: 8px;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+}
+
+.regisBtn:hover, .loginBtn:hover {
+  opacity: 1;
+}
+
+h4, h5 {
+  text-align: center;
+    font-weight: bold;
+    color:  rgba(0, 0, 0, 0.534);
+}
+
+.menuCont {
+  width: fit-content;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* columns */
+
+* {
+  box-sizing: border-box;
+}
+
+.column1 {
+  margin: auto;
+  margin-top: 10px;
+  width: 1000px;
+  padding: 10px;
+  height: auto;
+  padding-bottom: 200px;
+  display: none;
+}
+
+.column2 {
+  margin: auto;
+  margin-top: 10px;
+  width: 1000px;
+  padding: 10px;
+  height: auto;
+  padding-bottom: 200px;
+  display: none;
+}
+
+figure {
+  float: left;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: thin white solid;
+  border-radius: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 18px;
+  margin-right: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  padding-top: 40px;
+  padding-bottom: 15px;
+  margin-bottom: -10px;
+  font-size: 40px;
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  color: white;
+  padding: -30px;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.linkBtn {
+  font-size: 16px;
+}
+
+button {
+  font-weight: bold;
+  font-size: 30px;
+  font-family: 'Cinzel', serif;
+  color: white;
+  outline: none;
+  background: none;
+  border: none;
+}
+
+.myButtons {
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  color: white;
+  text-shadow: 1.5px 2.5px 5px #030303;
+  background-color:rgb(47, 79, 79, 0.85);
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: space-evenly;
+  display: inline-flex;
+  width: 100%;
+}
+
+.driveButton:hover {
+  text-decoration: underline #ffffff double;
+}
+
+.hikeButton:hover {
+  text-decoration: underline #ffffff double;
+}
+
+/* dashed list */
+ul {
+  margin: 0px;
+  font-size: 18px;
+  line-height: 35px;
+  color: white;
+  padding: -30px;
+}
+
+ul.dashed {
+  list-style-type: none;
+}
+
+ul.dashed > li {
+  text-indent: 5px;
+}
+
+ul.dashed > li:before {
+  content: "-";
+  text-indent: -5px;
+}
+
+div.menuBtns {
+  color: white;
+  position: fixed;
+  bottom: 8%;
+  text-align: center;
+  margin-bottom: -30px;
+  font-size: 36px;
+  font-family: 'Cinzel', serif;
+  justify-content: space-evenly;
+  display: inline-flex;
+  width: 100%;
+  background-color:  rgba(0, 0, 0, 0.534);
+
+}
+
+.menuBtns p {
+padding: 5px;
+}
+
+.pbtn {
+  font-size: 22px;
+}
+
+#stickyfooter {
+  position: fixed;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  width: 100%;
+  /* height of footer */
+  height: 48px;
+  background-color: gray;
+  text-align: center;
+  font-weight: 900;
+  border-top: 5px solid darkslategray
+ }
+
+
+
+ 
+  @media screen and (max-width: 768px) {
+    html { 
+      background-image:none;
+      }  
+    body {
+     background-color: black;
+      }
+     
+      .wrapper {
+        
+        width: 100%;
+        padding: 20px;
+      }
+    
+      #main-content,
+      #sidebar {
+        width: 100%;
+      }
+      #gif1 {
+        position: relative;
+        margin-left: -130px;
+      }
+      
+      #gif {
+        position: relative;
+        margin-left: -130px;
+       
+      }
+      #sidebar {
+        margin-top: 40px;
+      }
+      .pbtn {
+        font-size: 13px;
+      }
+      summary {
+        font-size: 16px;
+      }
+
+      div.menuBtns{
+        width: 375px;
+        margin-bottom: -18px;
+      }
+      button {
+        font-size: 24px;
+      }
+      div#drive.column1{
+        width: 330px;
+        height: 380px;
+        margin-left: none;
+      }
+      .column1{
+        
+        border-radius: 1%;
+        margin: none;
+        padding: none;
+      }
+      figure {
+        width: 330px;
+        height: 380px;
+        margin-left: -5px;
+
+      }
+      img {
+        width: 280px;
+        
+      }
+      div#hike.column2{
+        width: 330px;
+        height: 380px
+      }
+  }
+    
+  @media only screen and (max-width: 768px) {
+      /* For mobile phones: */
+      [class*="col-"] {
+        width: 100%;
+      }
+    }
+  
+  @media screen and (max-width: 400px) {
+      body {
+     background-color: black;
+      }
+     
+      .wrapper {
+        
+        width: 100%;
+        padding: 20px;
+      }
+    
+      #main-content,
+      #sidebar {
+        width: 100%;
+      }
+    
+      #sidebar {
+        margin-top: 40px;
+      }
+      .pbtn {
+        font-size: 13px;
+      }
+      summary {
+        font-size: 16px;
+      }
+
+      div.menuBtns{
+        width: 375px;
+        margin-bottom: -18px;
+      }
+      button {
+        font-size: 24px;
+      }
+      div#drive.column1{
+        width: 330px;
+        height: 380px;
+        margin-left: none;
+      }
+      #gif1 {
+        margin-left: 20%;
+        padding: 20px;
+      }
+      
+      #gif {
+        margin-left: -50px;
+        
+      }
+      .column1{
+        
+        border-radius: 1%;
+        margin: none;
+        margin-bottom: 2000px;
+        padding: none;
+      }
+      figure {
+        width: 330px;
+        height: 380px;
+        margin-left: -5px;
+
+      }
+      img {
+        width: 280px;
+        
+      }
+      div#hike.column2{
+        width: 330px;
+        height: 380px;
+        margin-bottom: 1700px;
+      }
+  }
+    
+  @media screen and (max-width: 992px) {
+      html {
+        background-attachment: none;
+      }
+      body {
+        background-color: black;
+        
+      }
+     
+      .wrapper {
+        
+        width: 100%;
+        padding: 20px;
+      }
+    
+      #main-content,
+      #sidebar {
+        width: 100%;
+      }
+    
+      #sidebar {
+        margin-top: 40px;
+      }
+
+      .pbtn {
+        font-size: 13px;
+      }
+      summary {
+        font-size: 16px;
+      }
+
+      div.menuBtns{
+        width: 375px;
+        margin-bottom: -24px;
+      }
+      button {
+        font-size: 24px;
+      }
+      div#drive.column1{
+        width: 330px;
+        height: 380px;
+        margin-left: none;
+      }
+      .column1{
+        
+        border-radius: 1%;
+        margin: none;
+        padding: none;
+      }
+      figure {
+        width: 330px;
+        height: 380px;
+        margin-left: -5px;
+
+      }
+      img {
+        width: 280px;
+        
+      }
+      div#hike.column2{
+        width: 330px;
+        height: 380px
+      }
+      iframe.giphy-embed{
+        width: 240px;
+        max-height: 240px;
+      }
+      #gif{
+        margin-left: 18px;
+      }
+      #gif1{
+        margin-left: 5%;
+
+      }
+  }

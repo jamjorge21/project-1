@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+    
+        <meta charset="UTF-8" />
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+        <link rel="stylesheet" href="assets/css/reset.css" />
+    
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@800;900&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="assets/css/style.css" />
+    
+        <title> The Long Cut App </title>
+    
+    
+    </head>
+
+    <header>
+        <h1 class="text-center"><a href="index.html">The Long Cut </a></h1></strong>
+    </header>
+    
+    <body>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 12</div>
+              <img id="slideImg" src="assets/pictures/bridge1.jpg" width='500' height='263' alt ='placeholder'>
+              <div class="text">Bridge to Nowhere</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 12</div>
+              <img id="slideImg" src="assets/pictures/ach1.jpg"width='500' height='263' alt ='placeholder' >
+              <div class="text">Angel Crest HWY</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 12</div>
+              <img id="slideImg" src="assets/pictures/California-58.jpg" width='500' height='263' alt ='placeholder'>
+              <div class="text">California HWY-58</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 12</div>
+                <img id="slideImg" src="assets/pictures/carbon142.jpg" width='500' height='263' alt ='placeholder'>
+                <div class="text">Carbon Canyon</div>
+              </div>
+              
+              <div class="mySlides fade">
+                <div class="numbertext">5 / 12</div>
+                <img id="slideImg" src="assets/pictures/Eagle-lake.jpg"width='500' height='263' alt ='placeholder' >
+                <div class="text">Eagle Lake</div>
+              </div>
+              
+              <div class="mySlides fade">
+                <div class="numbertext">6 / 12</div>
+                <img id="slideImg" src="assets/pictures/Etiwanda-Falls.jpg" width='500' height='263' alt ='placeholder'>
+                <div class="text">Etiwanda Falls</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">7 / 12</div>
+                <img id="slideImg" src="assets/pictures/mtTallac.jpg" width='500' height='263' alt ='placeholder'>
+                <div class="text">Mount Tallac</div>
+              </div>
+              
+              <div class="mySlides fade">
+                <div class="numbertext">8 / 12</div>
+                <img id="slideImg" src="assets/pictures/wind111.jpg"width='500' height='263' alt ='placeholder' >
+                <div class="text">Windmill HWY 111</div>
+              </div>
+              
+              <div class="mySlides fade">
+                <div class="numbertext">9 / 12</div>
+                <img id="slideImg" src="assets/pictures/yosemite.jpg" width='500' height='263' alt ='placeholder'>
+                <div class="text">Upper Yosimite Falls</div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">10 / 12</div>
+                <img id="slideImg" src="assets/pictures/parkfeild.jpg" width='500' height='263' alt ='placeholder'>
+                <div class="text">Parkfeild HWY 58</div>
+              </div>
+              
+              <div class="mySlides fade">
+                <div class="numbertext">11 / 12</div>
+                <img id="slideImg" src="assets/pictures/hwy1.jpg"width='500' height='263' alt ='placeholder' >
+                <div class="text">Costal HWY 1</div>
+              </div>
+              
+              <div class="mySlides fade">
+                <div class="numbertext">12 / 12</div>
+                <img id="slideImg" src="assets/pictures/ironmt.jpg" width='500' height='263' alt ='placeholder'>
+                <div class="text">Iron Mountain</div>
+              </div>
+
+
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span> 
+              <span class="dot" onclick="currentSlide(5)"></span> 
+              <span class="dot" onclick="currentSlide(6)"></span> 
+              <span class="dot" onclick="currentSlide(7)"></span> 
+              <span class="dot" onclick="currentSlide(8)"></span> 
+              <span class="dot" onclick="currentSlide(9)"></span> 
+              <span class="dot" onclick="currentSlide(10)"></span> 
+              <span class="dot" onclick="currentSlide(11)"></span> 
+              <span class="dot" onclick="currentSlide(12)"></span> 
+            </div>
+            <br>
+    <a id="welcomeBtn" href="prospect.html"  type="button">Start your journey! </a>
+  
+  
+  
+      <br>
+    <div id="stickyfooter">
+       
+    Routes Constellated by the Stars 🛣 🌟<br> The Long Cut ©
+    </div>
+ 
+    
+              
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    
+        <script src="assets/js/index.js"></script>
+    </body>
+
+</html>
